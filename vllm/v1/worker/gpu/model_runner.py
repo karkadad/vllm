@@ -1117,7 +1117,7 @@ class GPUModelRunner(LoRAModelRunnerMixin):
                         ),
                     )
                     if (
-                        envs.VLLM_XPU_USE_SAMPLE_GRAPH
+                        envs.VLLM_XPU_USE_SAMPLER_GRAPH
                         and self.is_last_pp_rank
                         and self.sampler is not None
                     ):
